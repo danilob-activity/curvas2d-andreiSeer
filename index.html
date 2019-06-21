@@ -31,11 +31,23 @@
             <input id="save" type="button" value="Save" />
         </div>
         <textarea id="code" class="playable-code">
-p0 = [-250,-100]; 
-p1 = [250,140]; 
-p2 = [-1200,+150]; 
-p3 = [-300,-525]; 
-setHermite(p0,p1,p2,p3);
+
+p0 = [250,100]; 
+p1 = [200,150]; 
+p2 = [200,-150]; 
+p3 = [-200,-225];
+setTimeBezier(1);
+setTimeHermite(3); 
+//setBezier(p0,p1,p2,p3);
+//setHermite(p0,p1,p2,p3);
+//setPiscaPiscaBezier(p0, p1, p2, p3);
+//setChainBezier(p0, p1, p2, p3);
+//setRepetitionBezier(p0, p1, p2, p3);
+p0 = [200,200]; 
+p1 = [100,180]; 
+p2 = [-200,-150]; 
+p3 = [-310,200];
+setPacManBezier(p0, p1, p2, p3);//Tentei fazer algo, mas como não deu tempo.
   </textarea>
 
         <script src="gl-matrix.js"></script>
